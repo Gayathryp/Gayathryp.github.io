@@ -193,5 +193,14 @@ nav ul li a.active{
 nav ul li a:hover{
     background:darkgrey;
 }
+.follow li a img{
+  height: 4em;
+  width: 4em;
+  float: left; 
+  padding: 1em;
+  margin-top: -1em;
+}
+.follow li:nth-child(1){
+    margin-left: 12.5em;
+}
 
-    
