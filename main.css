@@ -12,7 +12,9 @@ header{
 }
 .logo{
     height: 8em;
+    width: 10em;
     border-radius: 50%;
+    margin-top:1em ;
 }
 .closehidedesktop{
     display: none;
@@ -21,18 +23,38 @@ img{
     height: 10em;
     width: 10em;
     margin-top: 30px;
-
+}
+.menu{
+    border-radius: 50%;
+    margin-top: 0em;
+    height:5em ;
+    width: 5em;
+}
+svg{
+    height: 30em;
+    width: 30em;
+    margin-bottom: -6em;
+}
+.hidemobile{
+    display: none;
 }
 h1{
     text-align: center;
     color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 h3{
     text-align: center;
     color: saddlebrown;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    z-index: 3;
 }
 blockquote{
    margin-top: 8px;
@@ -45,8 +67,9 @@ figcaption{
      
 }
 h2{
-     margin-top: 50px;
-     margin-bottom: 7px;
+     margin-top:2em;
+     font-size: 2.5em;
+     margin-bottom:0.8em;
      font-family: monospace;
      font-weight: bold;
      color: red;
@@ -67,6 +90,8 @@ h2{
 }
 .greycontainer ul{
     transform: skewY(2deg);
+    padding: 2em;
+    list-style: none;
 }
 .greycontainer img{
     border-radius: 50%;
@@ -80,6 +105,93 @@ p{
     color: sienna;
     margin-top: 10px;
     
+}
+.cta{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: darkblue;
+    background-color: lawngreen;
+    border-radius: 15%;
+    width:30%;
+    display: inline-block;
+    padding: 0.5em;
+    font-weight: bolder;
+    z-index: 4;
+}
+.footerlinks li a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: lightgray;
+    width: 25%;
+    padding: 0.3em;
+}
+.address{
+    color: black;
+    padding: 0.5em;
+    font-size: 1.2em;
+    
+}
+.footerlinks{
+    padding: 1em;
+    margin-bottom: 2em;
+    list-style: none;
+    font-size:1.2em ;
+}
+.bluecontainer:before{
+    content: "";
+    width: 40px;
+    height:40px;
+    background-color:lightblue;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+.bluecontainer:after{
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    z-index: -1;
+}
+nav ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: rgb(36,41,44);
+    z-index: 7;    
+}
+nav ul li a{
+    color: white;
+    display:block;
+    background: rgb(59, 67,71);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+nav ul li img{
+    width: 3em;
+    height: 3em;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    margin-left: 14em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    background-color: white;
+}
+nav ul li a.active{
+    background-color: lightgreen;
+}
+nav ul li a:hover{
+    background:darkgrey;
 }
 
     
