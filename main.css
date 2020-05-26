@@ -203,4 +203,54 @@ nav ul li a:hover{
 .follow li:nth-child(1){
     margin-left: 12.5em;
 }
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+@keyframes sway-right{
+    0%{
+        transform: skewX(-2deg);
+    }
+    25%{
+        transform: skewX(0deg);
+    }
+    50%{
+        transform: skewX(2deg);
+    }
+    75%{
+        transform: skewX(0deg);
+    }
+    100%{
+        transform: skewX(-2deg);
+    }
+}
+@keyframes sway-left{
+    0%{
+        transform: skewX(2deg);
+    }
+    25%{
+        transform: skewX(0deg);
+    }
+    50%{
+        transform: skewX(-2deg);
+    }
+    75%{
+        transform: skewX(0deg);
+    }
+    100%{
+        transform: skewX(2deg);
+    }
+}
 
+#rightm,#rightl{
+    animation:sway-right 2s infinite linear;
+    transform-origin: bottom;
+ }
+ #leftl, #leftm{
+    animation:sway-left 2s infinite linear;
+    transform-origin: bottom;
+ }
